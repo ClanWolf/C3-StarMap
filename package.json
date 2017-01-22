@@ -1,0 +1,26 @@
+{
+  "name": "c3-startmap",
+  "version": "1.0.0",
+  "description": "Starmap of the BattleTech-Universe as a JavaScript webpage.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClanWolf/C3-StarMap.git"
+  },
+  "keywords": [
+    "BattleTech",
+    "ClanWolf"
+  ],
+  "author": "Peter Kupietz <peter.kupietz@gmx.net>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ClanWolf/C3-StarMap/issues"
+  },
+  "homepage": "https://github.com/ClanWolf/C3-StarMap#readme",
+  "dependencies": {
+    "leaflet": "^1.0.2"
+  }
+}
