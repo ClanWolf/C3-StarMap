@@ -1,0 +1,12 @@
+[options]
+esproposal.decorators=ignore
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=ignore
+unsave.enable_getters_and_setters=true
+
+# webpack loaders
+module.name_mapper='.*\.css$' -> '<PROJECT_ROOT>/flow/stub/css-modules.js'
+module.name_mapper='.*\.\(svg\|png\|jpg\|gif\)$' -> '<PROJECT_ROOT>/flow/stub/url-loader.js'
+
+[libs]
+flow/declarations/
