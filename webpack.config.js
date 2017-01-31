@@ -16,7 +16,6 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, './src'), 
   },
-  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -37,7 +36,10 @@ module.exports = {
         test: /\.less$/,
         use: ['style-loader', 'css-loader', 'less-loader'],
       },
-      // Loaders for other file types can go here
+      {   
+        test: /\.png/,  
+        loader: "file-loader"
+      }
     ],
   },
 };

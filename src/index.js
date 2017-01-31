@@ -2,6 +2,6 @@
 import './index.less';
 import React from 'react';
 import { render } from 'react-dom';
-import Root from './components/root';
+import RootComponent from './components/root';
 
-render(<Root />, document.getElementById('starmap-container'));
+render(<RootComponent />, document.getElementById('starmap-container'));

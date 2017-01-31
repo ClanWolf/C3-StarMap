@@ -1,11 +1,12 @@
 /* @flow */
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
+import MapContainer from './map/map';
 
 type Props = {};
 
 @observer
-export default class Root extends Component {
+export default class RootComponent extends Component {
 
 	constructor(props: Props) {
 		super(props);
@@ -13,7 +14,9 @@ export default class Root extends Component {
 
 	render() {
 		return(
-			<div style={{ color: 'white' }}>Test</div>
+			<div style={{ color: 'white' }}>
+				<MapContainer />
+			</div>
 		);
 	}
 }
