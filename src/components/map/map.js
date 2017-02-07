@@ -42,12 +42,16 @@ export default class MapComponent extends Component {
 		planets.forEach(planet => {
 			if(planet.x && planet.y) {
 				const coords = L.latLng([planet.y, planet.x]);
-				const icon = L.divIcon({ className: 'planet-marker' });
+				const icon = L.divIcon({ iconSize: [4, 4], className: 'planet-marker' });
 				const marker = L.marker(coords, { icon: icon });
 
 				marker.bindTooltip(planet.name);
 				this.map.addLayer(marker);
 			}
+		});
+
+		const polygons = Universe.polygons.forEach(coordinates => {
+			const feature = L.polygon(coordinates.map(point => L.latLng([point[1], point[0]])), {color: 'red'}).addTo(this.map);
 		});
 
 	}
