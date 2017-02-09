@@ -1,5 +1,6 @@
 /* @flow */
 declare type System = {
+	id: string,
     link: string,
     name: string,
     x: number,

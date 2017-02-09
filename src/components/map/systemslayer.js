@@ -25,20 +25,23 @@ export default class SystemsLayer extends Component {
 		if(App.currentZoom >= 2) {
 			const systems = toJS(Universe.systems, false);
 			systems.forEach(system => {
-				if(system.x && system.y) {
-					const coords = L.latLng([system.y, system.x]);
-					if(App.currentBounds.contains(coords)) {
+				const coords = L.latLng([system.y, system.x]);
+				if(App.currentBounds.contains(coords)) {
 
-						const marker = L.circleMarker(coords, {
-							radius: 8,
-							fillColor: 'white',
-							color: system.color,
-							fillOpacity: 0.5
-						});
+					const marker = L.circleMarker(coords, {
+						radius: 8,
+						fillColor: 'white',
+						color: system.color,
+						fillOpacity: 0.5
+					});
 
-						marker.bindTooltip(system.name);
-						this.layer.addLayer(marker);
-					}
+					marker.bindTooltip(system.name);
+
+					marker.on({
+						click: () => Universe.addStop(system)
+					});
+
+					this.layer.addLayer(marker);
 				}
 			});
 		}

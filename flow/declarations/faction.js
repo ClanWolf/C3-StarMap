@@ -1,5 +1,5 @@
 /* @flow */
-declare type Fraction = {
+declare type Faction = {
 	type: string,
 	name: string,
 	world: string,
