@@ -1,0 +1,104 @@
+[
+  {
+    "type": "Unknown Planet",
+    "name": "Unknown Planet",
+    "world": "",
+    "color": "#111111"
+  },
+  {
+    "type": "No record",
+    "name": "No record",
+    "world": "",
+    "color": "#444444"
+  },
+  {
+    "type": "Clan",
+    "name": "Clan",
+    "world": "Strana Mechty",
+    "color": "#831100"
+  },
+  {
+    "type": "IS Major",
+    "name": "Capellan Confederation",
+    "world": "Sian",
+    "color": "#77bb41"
+  },
+  {
+    "type": "IS Major",
+    "name": "ComStar",
+    "world": "Terra",
+    "color": "#ffffff"
+  },
+  {
+    "type": "IS Major",
+    "name": "Draconis Combine",
+    "world": "Luthien",
+    "color": "#e32400"
+  },
+  {
+    "type": "IS Major",
+    "name": "Federated Commonwealth",
+    "world": "New Avalon",
+    "color": "#fec700"
+  },
+  {
+    "type": "IS Major",
+    "name": "Federated Suns",
+    "world": "New Avalon",
+    "color": "#fec700"
+  },
+  {
+    "type": "IS Major",
+    "name": "Free Worlds League",
+    "world": "Atreus",
+    "color": "#7b219f"
+  },
+  {
+    "type": "IS Major",
+    "name": "Lyran Alliance",
+    "world": "Tharkad",
+    "color": "#00217a"
+  },
+  {
+    "type": "IS Major",
+    "name": "Lyran Commonwealth",
+    "world": "Tharkad",
+    "color": "#00217a"
+  },
+  {
+    "type": "IS Minor",
+    "name": "Free Rasalhague Republic",
+    "world": "",
+    "color": "#00c7fc"
+  },
+  {
+    "type": "Periphery",
+    "name": "Magistracy of Canopus",
+    "world": "Canopus",
+    "color": "#008cb4"
+  },
+  {
+    "type": "Periphery",
+    "name": "Marian Hegemony",
+    "world": "Alphard",
+    "color": "#d58400"
+  },
+  {
+    "type": "Periphery",
+    "name": "Outworld Alliance",
+    "world": "Alpheratz",
+    "color": "#aaaaaa"
+  },
+  {
+    "type": "Periphery",
+    "name": "Taurian Concordat",
+    "world": "Taurus",
+    "color": "#ad3e00"
+  },
+  {
+    "type": "Periphery",
+    "name": "Auregan Coalition",
+    "world": "",
+    "color": "#ff6a00"
+  }
+]

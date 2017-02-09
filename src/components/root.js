@@ -1,7 +1,7 @@
 /* @flow */
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
-import MapContainer from './map/map';
+import { StarMap } from './map';
 
 type Props = {};
 
@@ -15,7 +15,7 @@ export default class RootComponent extends Component {
 	render() {
 		return(
 			<div style={{ color: 'white' }}>
-				<MapContainer />
+				<StarMap />
 			</div>
 		);
 	}
