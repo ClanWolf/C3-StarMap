@@ -21,9 +21,9 @@ export default class SpheresLayer extends Component {
 			const options = {
 				color: system.properties.color,
 				stroke: true,
-				fillOpacity: 0.8,
-				opacity: 0.8,
-				weight: 3
+				fillOpacity: 0.4,
+				opacity: 0.4,
+				weight: 2
 			};
 			L.polygon(system.sphere.map(point => L.latLng([point[1], point[0]])), options).addTo(this.layer);
 		});

@@ -25,11 +25,13 @@
   "dependencies": {
     "d3-voronoi": "^1.1.1",
     "leaflet": "^1.0.3",
-    "mobx": "^3.0.2",
+    "leaflet-simple-graticule": "^1.0.2",
+    "mobx": "^3.1.0",
     "mobx-react": "^4.1.0",
     "node-dijkstra": "^2.3.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "webpack-dev-server": "^2.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",

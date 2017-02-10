@@ -35,11 +35,21 @@ export default class SystemsLayer extends Component {
 						fillOpacity: 0.5
 					});
 
-					marker.bindTooltip(system.name);
-
 					marker.on({
 						click: () => Universe.addStop(system)
 					});
+
+					if(App.currentZoom >= 4) {
+						const icon = L.divIcon({ 
+							html: system.name,
+							iconSize: [160, 10],
+							iconAnchor: [80, 30],
+							className: 'system-label'
+						});
+						L.marker(coords, { icon: icon }).addTo(this.layer);
+					} else {
+						marker.bindTooltip(system.name);
+					}
 
 					this.layer.addLayer(marker);
 				}

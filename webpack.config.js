@@ -23,7 +23,7 @@ module.exports = {
         use: [{
           loader: 'babel-loader',
           options: { 
-          	presets: [['es2015', { "modules": false }], 'stage-0', 'react'],
+          	presets: [['es2015'/*, { "modules": false }*/], 'stage-0', 'react'],
           	plugins: ['transform-decorators-legacy']
           }
         }],
@@ -37,7 +37,7 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'less-loader'],
       },
       {   
-        test: /\.png/,  
+        test: /\.(png|jpg)/,  
         loader: "file-loader"
       }
     ],
