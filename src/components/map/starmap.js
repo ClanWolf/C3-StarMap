@@ -29,9 +29,9 @@ const mapStyle = {
 };
 
 const options = {
-	interval: 100,
+	interval: 200,
     showshowOriginLabel: false,
-    redraw: 'moveend'
+    redraw: 'move'
 };
  
 const simpleGraticule = new SimpleGraticule(options);

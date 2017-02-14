@@ -23,12 +23,14 @@
   },
   "homepage": "https://github.com/ClanWolf/C3-StarMap#readme",
   "dependencies": {
+    "concaveman": "^1.1.1",
     "d3-voronoi": "^1.1.1",
+    "greiner-hormann": "^1.3.1",
     "leaflet": "^1.0.3",
-    "leaflet-simple-graticule": "^1.0.2",
     "mobx": "^3.1.0",
     "mobx-react": "^4.1.0",
     "node-dijkstra": "^2.3.0",
+    "polygon-offset": "^0.3.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "webpack-dev-server": "^2.3.0"

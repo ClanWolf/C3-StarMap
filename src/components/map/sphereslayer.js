@@ -21,12 +21,19 @@ export default class SpheresLayer extends Component {
 			const options = {
 				color: system.properties.color,
 				stroke: true,
-				fillOpacity: 0.4,
-				opacity: 0.4,
+				fillOpacity: 0.6,
+				opacity: 0.6,
 				weight: 2
 			};
-			L.polygon(system.sphere.map(point => L.latLng([point[1], point[0]])), options).addTo(this.layer);
+			L.polygon(system.sphere.map(point => {
+				const latLng = L.latLng([point[1], point[0]])
+				return latLng
+			}), options).addTo(this.layer);
+			//L.polygon(system.sphere, options).addTo(this.layer);
 		});
+
+		//L.polyline(Universe.hull.map(point => L.latLng([point[1], point[0]])), { color: 'white' }).addTo(this.layer)
+		//L.polyline(Universe.hull2.map(point => L.latLng([point[1], point[0]])), { color: 'yellow' }).addTo(this.layer)
 	}
 
 	componentDidMount() {

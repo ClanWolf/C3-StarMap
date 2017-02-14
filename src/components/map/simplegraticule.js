@@ -5,7 +5,7 @@
  */
 export default L.LayerGroup.extend({
     options: {
-        interval: 100,
+        interval: 500,
         showOriginLabel: false,
         redraw: 'moveend',
         hidden: false,
