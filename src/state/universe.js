@@ -67,12 +67,12 @@ class Universe {
 		const hulls: Map<string, PolygonCoordinates> = new Map();
 		const mapping = {};
 		this.systems.forEach(system => {
-			if(system.x && system.y)
+			if(system.x && system.y)  // filter Terra
 				(mapping[system.affiliation] = mapping[system.affiliation] || []).push(system);
 		});
 
 		Object.keys(mapping).forEach(id => {
-				hulls.set(id, offset.data(concaveman(mapping[id].map(system => [ system.x, system.y ]), Infinity)).offsetLine(50)[0]);
+				hulls.set(id, offset.data(concaveman(mapping[id].map(system => [ system.x, system.y ]), 1.5)).offsetLine(20)[0]);
 		});
 
 		voronoi.extent([[-3000,-3000], [3000, 3000]]);
@@ -91,6 +91,7 @@ class Universe {
 						};
 				}
 			} else {
+				// Terra
 				return {
 					sphere: polygon,
 					properties: properties
