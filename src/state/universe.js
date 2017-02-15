@@ -14,6 +14,12 @@ const voronoi = d3voronoi().x(d => d.x).y(d => d.y);
 const route = new Graph();
 const offset = new Offset();
 
+// see https://github.com/mapbox/concaveman
+const hullOpts = {
+	concavity: 1.5,
+	lengthThreshold: 0
+};
+
 class Universe {
 
 	@observable
@@ -72,7 +78,7 @@ class Universe {
 		});
 
 		Object.keys(mapping).forEach(id => {
-				hulls.set(id, offset.data(concaveman(mapping[id].map(system => [ system.x, system.y ]), 1.5)).offsetLine(20)[0]);
+				hulls.set(id, offset.data(concaveman(mapping[id].map(system => [ system.x, system.y ]), hullOpts.concavity, hullOpts.lengthThreshold)).offsetLine(20)[0]);
 		});
 
 		voronoi.extent([[-3000,-3000], [3000, 3000]]);
