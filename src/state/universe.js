@@ -16,8 +16,8 @@ const offset = new Offset();
 
 // see https://github.com/mapbox/concaveman
 const hullOpts = {
-	concavity: 1.5,
-	lengthThreshold: 0
+	concavity: 15.0,
+	lengthThreshold: 10
 };
 
 class Universe {

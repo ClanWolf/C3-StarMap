@@ -29,10 +29,11 @@ export default class SystemsLayer extends Component {
 				if(App.currentBounds.contains(coords)) {
 
 					const marker = L.circleMarker(coords, {
-						radius: 8,
+						radius: 4,
 						fillColor: 'white',
 						color: system.color,
-						fillOpacity: 0.5
+						fillOpacity: 0.5,
+						weight: 1.0
 					});
 
 					marker.on({
