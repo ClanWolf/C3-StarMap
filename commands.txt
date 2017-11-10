@@ -1,8 +1,8 @@
-3a22449f7a40f686586974b6a9ba5bb2673441b2
-
 // update project from githubgit 
 git pull
 
 // push changes
+git add . 
+git commit -m "Comment"
 git push
 
