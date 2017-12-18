@@ -15,7 +15,7 @@ const mapOptions = {
     minZoom: -2,
     maxZoom: 18,
     zoom: -1,
-    zoomDelta: 0.5,
+    zoomDelta: 0.2,
     doubleClickZoom: false,
     preferCanvas: false,
     zoomControl: false,

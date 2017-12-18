@@ -16,14 +16,18 @@ export default class SpheresLayer extends Component {
 		super(props);
 	}
 
+// Union of a number of polygons to one (?):
+// https://stackoverflow.com/questions/35394577/leaflet-js-union-merge-circles
+
 	refresh = () => {
 		Universe.spheres.forEach(system => {
 			const options = {
 				color: system.properties.color,
 				stroke: true,
-				fillOpacity: 0.6,
-				opacity: 0.6,
-				weight: 2
+				fillOpacity: 0.2,
+				opacity: 0.4,
+				weight: 2,
+				lineJoin: 'round'
 			};
 			L.polygon(system.sphere.map(point => {
 				const latLng = L.latLng([point[1], point[0]])

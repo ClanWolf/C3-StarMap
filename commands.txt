@@ -1,4 +1,5 @@
-9e92b1dc0f87bddd1f0b8cb0981738741ab2f70a
+// packages
+npm update
 
 // update project from githubgit 
 git pull
@@ -8,3 +9,5 @@ git add .
 git commit -m "Comment"
 git push
 
+// create a distribution
+webpack

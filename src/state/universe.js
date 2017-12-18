@@ -1,6 +1,7 @@
 /* @flow */
 import { observable, computed, action, toJS } from 'mobx';
 import systems from './systems.json';
+// import systems from 'http://c3.clanwolf.net/server/MWLL_ChaosMarch.json';
 import factions from './factions.json';
 
 import { voronoi as d3voronoi } from 'd3-voronoi';
@@ -78,7 +79,7 @@ class Universe {
 		});
 
 		Object.keys(mapping).forEach(id => {
-				hulls.set(id, offset.data(concaveman(mapping[id].map(system => [ system.x, system.y ]), hullOpts.concavity, hullOpts.lengthThreshold)).offsetLine(20)[0]);
+				hulls.set(id, offset.data(concaveman(mapping[id].map(system => [ system.x, system.y ]), hullOpts.concavity, hullOpts.lengthThreshold)).offsetLine(10)[0]);
 		});
 
 		voronoi.extent([[-3000,-3000], [3000, 3000]]);
