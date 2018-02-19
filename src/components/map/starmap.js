@@ -11,10 +11,10 @@ import { Universe, App } from '../../state';
 type Props = {};
 
 const mapOptions = {
-    center: [0, 0],
+    center: [210, 4],
     minZoom: -2,
-    maxZoom: 18,
-    zoom: -1,
+    maxZoom: 15,
+    zoom: 1,
     zoomDelta: 0.2,
     doubleClickZoom: false,
     preferCanvas: false,

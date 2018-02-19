@@ -1,0 +1,2 @@
+Starmap data MWO:
+https://static.mwomercs.com/data/cw/mapdata.json

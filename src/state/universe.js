@@ -1,6 +1,6 @@
 /* @flow */
 import { observable, computed, action, toJS } from 'mobx';
-import systems from './systems.json';
+import systems from './systems_CWG.json';
 // import systems from 'http://c3.clanwolf.net/server/MWLL_ChaosMarch.json';
 import factions from './factions.json';
 
@@ -37,6 +37,7 @@ class Universe {
 		systems
 			.map((system, key) => Object.assign({}, system, { id: `${key}` }))
 			.filter(system => system.x != null && system.y != null)
+			.filter(system => system.active == "true")
 			.filter(system => {
 				const faction = this.factions.get(system.affiliation);
 				return faction && faction.world

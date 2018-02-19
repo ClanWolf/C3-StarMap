@@ -22,9 +22,10 @@ module.exports = {
         test: /\.js$/,
         use: [{
           loader: 'babel-loader',
-          options: { 
+          options: {
           	presets: [['es2015'/*, { "modules": false }*/], 'stage-0', 'react'],
-          	plugins: ['transform-decorators-legacy']
+          	plugins: ['transform-decorators-legacy'],
+          	compact: true
           }
         }],
       },

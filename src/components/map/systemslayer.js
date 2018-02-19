@@ -40,7 +40,7 @@ export default class SystemsLayer extends Component {
 						click: () => Universe.addStop(system)
 					});
 
-					if(App.currentZoom >= 4) {
+					if(App.currentZoom >= 2) {
 						const icon = L.divIcon({ 
 							html: system.name,
 							iconSize: [160, 10],

@@ -18,6 +18,24 @@
     "color": "#831100"
   },
   {
+    "type": "Clan",
+    "name": "Clan Wolf",
+    "world": "Strana Mechty",
+    "color": "#d95000"
+  },
+  {
+    "type": "Clan",
+    "name": "Clan Ghost Bear",
+    "world": "Strana Mechty",
+    "color": "#caf0fe"
+  },
+  {
+    "type": "Clan",
+    "name": "Clan Jade Falcon",
+    "world": "Strana Mechty",
+    "color": "#c3d117"
+  },
+  {
     "type": "IS Major",
     "name": "Capellan Confederation",
     "world": "Sian",
@@ -63,12 +81,12 @@
     "type": "IS Major",
     "name": "Lyran Commonwealth",
     "world": "Tharkad",
-    "color": "#00217a"
+    "color": "#0042aa"
   },
   {
     "type": "IS Minor",
     "name": "Free Rasalhague Republic",
-    "world": "",
+    "world": "Rasalhague",
     "color": "#00c7fc"
   },
   {
