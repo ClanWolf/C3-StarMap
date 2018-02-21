@@ -40,6 +40,7 @@ class Universe {
 			.filter(system => system.active == "true")
 			.filter(system => {
 				const faction = this.factions.get(system.affiliation);
+				//const faction = this.factions.get(system.faction_short);
 				return faction && faction.world
 			})
 			.forEach(system => this.systemProperties.set(system.id, system));
