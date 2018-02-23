@@ -1,6 +1,6 @@
 /* @flow */
 import { observable, computed, action, toJS } from 'mobx';
-import systems from './systems_CWG.json';
+//import systems from './systems_CWG.json';
 // import systems from 'http://c3.clanwolf.net/server/MWLL_ChaosMarch.json';
 import factions from './factions.json';
 
