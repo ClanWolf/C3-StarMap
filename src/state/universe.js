@@ -11,6 +11,8 @@ import concaveman from 'concaveman';
 import greinerHormann from 'greiner-hormann';
 import Offset from 'polygon-offset';
 
+import axios from 'axios';
+
 const voronoi = d3voronoi().x(d => d.x).y(d => d.y);
 const route = new Graph();
 const offset = new Offset();
@@ -33,24 +35,24 @@ class Universe {
 	systemProperties: Map<string, System> = observable.map({});
 
 	constructor() {
-		factions.forEach(faction => this.factions.set(faction.name, faction));
-		systems
-			.map((system, key) => Object.assign({}, system, { id: `${key}` }))
-			.filter(system => system.x != null && system.y != null)
-			.filter(system => system.active == "true")
-			.filter(system => {
-				const faction = this.factions.get(system.affiliation);
+		factions.forEach(faction => this.factions.set(faction.short, faction));
+		//systems
+			//.map((system, key) => Object.assign({}, system, { id: `${key}` }))
+			//.filter(system => system.x != null && system.y != null)
+			//.filter(system => system.active == "true")
+			//.filter(system => {
+				//const faction = this.factions.get(system.affiliation);
 				//const faction = this.factions.get(system.faction_short);
-				return faction && faction.world
-			})
-			.forEach(system => this.systemProperties.set(system.id, system));
+				//return faction && faction.world
+			//})
+			//.forEach(system => this.systemProperties.set(system.id, system));
 
-		Array.from(this.systemProperties.values()).forEach(system => {
-			var nodes = {};
-			system.neighbors.forEach(neighbor => nodes[`${neighbor}`] = 1);
-			if(Object.keys(nodes).length)
-				route.addNode(system.id, nodes);
-		});
+		//Array.from(this.systemProperties.values()).forEach(system => {
+			//var nodes = {};
+			//system.neighbors.forEach(neighbor => nodes[`${neighbor}`] = 1);
+			//if(Object.keys(nodes).length)
+				//route.addNode(system.id, nodes);
+		//});
 	}
 
 	@computed
@@ -110,6 +112,25 @@ class Universe {
 	}
 
 	@action
+	loadData = () => {
+		const req = axios.get('http://c3.clanwolf.net/server/mapdata_HammerHead.json');
+		req.then((response) => {
+			response.data.HammerHead
+				.map((system, key) => Object.assign({}, system, { id: `${key}` }))
+				.filter(system => system.x != null && system.y != null)
+				//.filter(system => system.active == "true")
+				.filter(system => {
+					const faction = this.factions.get(system.affiliation);
+					//const faction = this.factions.get(system.faction_short);
+					return faction && faction.world
+				})
+				.forEach(system => this.systemProperties.set(system.id, system));
+		})
+
+		return req;
+	}
+
+	@action
 	addStop = (system: System) => {
 		const path = toJS(this.path, false);
 		if(path.length === 0) {
@@ -123,9 +144,7 @@ class Universe {
 					.forEach(system => path.push(system));
 		}
 		this.path = path;
-
 	};
-
 }
 
 export default new Universe();

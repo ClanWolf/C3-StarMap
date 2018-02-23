@@ -2,120 +2,140 @@
   {
     "type": "Unknown Planet",
     "name": "Unknown Planet",
+    "short": "UP",
     "world": "",
     "color": "#111111"
   },
   {
     "type": "No record",
     "name": "No record",
+    "short": "NR",
     "world": "",
     "color": "#444444"
   },
   {
     "type": "Clan",
     "name": "Clan",
+    "short": "C",
     "world": "Strana Mechty",
     "color": "#831100"
   },
   {
     "type": "Clan",
     "name": "Clan Wolf",
+    "short": "CW",
     "world": "Strana Mechty",
     "color": "#d95000"
   },
   {
     "type": "Clan",
     "name": "Clan Ghost Bear",
+    "short": "CGB",
     "world": "Strana Mechty",
     "color": "#caf0fe"
   },
   {
     "type": "Clan",
     "name": "Clan Jade Falcon",
+    "short": "CJF",
     "world": "Strana Mechty",
     "color": "#c3d117"
   },
   {
     "type": "IS Major",
     "name": "Capellan Confederation",
+    "short": "CC",
     "world": "Sian",
     "color": "#77bb41"
   },
   {
     "type": "IS Major",
     "name": "ComStar",
+    "short": "CS",
     "world": "Terra",
     "color": "#ffffff"
   },
   {
     "type": "IS Major",
     "name": "Draconis Combine",
+    "short": "DC",
     "world": "Luthien",
     "color": "#e32400"
   },
   {
     "type": "IS Major",
     "name": "Federated Commonwealth",
+    "short": "FC",
     "world": "New Avalon",
     "color": "#fec700"
   },
   {
     "type": "IS Major",
     "name": "Federated Suns",
+    "short": "FS",
     "world": "New Avalon",
     "color": "#fec700"
   },
   {
     "type": "IS Major",
     "name": "Free Worlds League",
+    "short": "FWL",
     "world": "Atreus",
     "color": "#7b219f"
   },
   {
     "type": "IS Major",
     "name": "Lyran Alliance",
+    "short": "LA",
     "world": "Tharkad",
     "color": "#00217a"
   },
   {
     "type": "IS Major",
     "name": "Lyran Commonwealth",
+    "short": "LC",
     "world": "Tharkad",
     "color": "#0042aa"
   },
   {
     "type": "IS Minor",
     "name": "Free Rasalhague Republic",
+    "short": "FRR",
     "world": "Rasalhague",
     "color": "#00c7fc"
   },
   {
     "type": "Periphery",
     "name": "Magistracy of Canopus",
+    "short": "MOC",
     "world": "Canopus",
     "color": "#008cb4"
   },
   {
     "type": "Periphery",
     "name": "Marian Hegemony",
+    "short": "MH",
     "world": "Alphard",
     "color": "#d58400"
   },
   {
     "type": "Periphery",
     "name": "Outworld Alliance",
+    "short": "OA",
     "world": "Alpheratz",
     "color": "#aaaaaa"
   },
   {
     "type": "Periphery",
     "name": "Taurian Concordat",
+    "short": "TC",
     "world": "Taurus",
     "color": "#ad3e00"
   },
   {
     "type": "Periphery",
     "name": "Auregan Coalition",
+    "short": "AC",
     "world": "",
     "color": "#ff6a00"
   }
