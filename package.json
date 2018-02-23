@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --devtool inline-source-map",
     "production": "webpack -p",
-    "dev": "webpack-dev-server --devtool inline-source-map"
+    "start": "webpack-dev-server --devtool inline-source-map"
   },
   "repository": {
     "type": "git",
