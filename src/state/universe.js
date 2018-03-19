@@ -1,7 +1,6 @@
 /* @flow */
 import { observable, computed, action, toJS } from 'mobx';
-//import systems from './systems_CWG.json';
-// import systems from 'http://c3.clanwolf.net/server/MWLL_ChaosMarch.json';
+// import systems from './systems_CWG.json';
 import factions from './factions.json';
 
 import { voronoi as d3voronoi } from 'd3-voronoi';
@@ -113,9 +112,9 @@ class Universe {
 
 	@action
 	loadData = () => {
-		const req = axios.get('http://c3.clanwolf.net/server/mapdata_HammerHead.json');
+		const req = axios.get('http://c3.clanwolf.net/server/mapdata_HH_StarSystems.json');
 		req.then((response) => {
-			response.data.HammerHead
+			response.data.HH_StarSystems
 				.map((system, key) => Object.assign({}, system, { id: `${key}` }))
 				.filter(system => system.x != null && system.y != null)
 				//.filter(system => system.active == "true")

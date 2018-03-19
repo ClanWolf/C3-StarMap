@@ -26,7 +26,7 @@ export default class SystemsLayer extends Component {
 			const systems = toJS(Universe.systems, false);
 			systems.forEach(system => {
 				const coords = L.latLng([system.y, system.x]);
-				if(App.currentBounds.contains(coords)) {
+				// if(App.currentBounds.contains(coords)) {
 
 					const marker = L.circleMarker(coords, {
 						radius: 4,
@@ -53,7 +53,7 @@ export default class SystemsLayer extends Component {
 					}
 
 					this.layer.addLayer(marker);
-				}
+				// }
 			});
 		}
 
