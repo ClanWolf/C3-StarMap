@@ -13,10 +13,6 @@ module.exports = {
     filename: '[name].bundle.js',
     publicPath: '/',
   },
-  devServer: {
-    contentBase: path.resolve(__dirname, './src'), 
-  },
-  devtool:"inline-source-map", 
   module: {
     rules: [
       {
@@ -26,7 +22,7 @@ module.exports = {
           options: {
           	presets: [['es2015'/*, { "modules": false }*/], 'stage-0', 'react'],
           	plugins: ['transform-decorators-legacy'],
-          	compact: false
+          	compact: true
           }
         }],
       },

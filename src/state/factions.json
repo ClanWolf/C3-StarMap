@@ -105,6 +105,20 @@
     "color": "#00c7fc"
   },
   {
+    "type": "IS Minor",
+    "name": "Stone's Coalition",
+    "short": "Stone",
+    "world": "Terra",
+    "color": "#cf7739"
+  },
+  {
+    "type": "IS Minor",
+    "name": "Blakist Protectorat",
+    "short": "BLP",
+    "world": "Terra",
+    "color": "#cdc0b0"
+  },
+  {
     "type": "Periphery",
     "name": "Magistracy of Canopus",
     "short": "MOC",

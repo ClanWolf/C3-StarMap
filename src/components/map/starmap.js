@@ -11,7 +11,7 @@ import { Universe, App } from '../../state';
 type Props = {};
 
 const mapOptions = {
-    center: [210, 4],
+    center: [-90, 4],
     minZoom: -2,
     maxZoom: 15,
     zoom: 1,

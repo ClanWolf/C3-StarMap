@@ -11,3 +11,7 @@ git push
 
 // create a distribution
 webpack
+webpack --config webpack.config.production.js
+
+// JavaScript Mapcontroll (https://leafletjs.com/reference-1.3.0.html#map-methods-for-modifying-map-state)
+window.StarMap.starMap.setView([-38.57,39.54], 5)
