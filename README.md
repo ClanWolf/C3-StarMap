@@ -1,6 +1,6 @@
 # C3-StarMap
 
-[![Liberapay](https://img.shields.io/liberapay/receives/WarWolfen.svg?logo=liberapay)](https://liberapay.com/WarWolfen/donate)
+[![Liberapay](https://img.shields.io/liberapay/receives/WarWolfen.svg?logo=liberapay)](https://liberapay.com/WarWolfen)
 
 Starmap of the BattleTech-Universe as a JavaScript webpage.
 
@@ -12,4 +12,4 @@ See additional information on the [BattleTech - The Board Game](https://bg.battl
 If you want to support C3, consider to donate via paypal or become a patreon:
 * [Paypal](https://www.paypal.com/donate?token=AwC5gorl98THoYU4nCfwClErqsySjRleA5PRrgjHXiQcCSSz5unSHbdSnpHQbJDjqzzZVSO6r7Ngv9Vw "Paypal")
 * [Patreon](https://www.patreon.com/ClanWolf "Patreon")
-* [Liberapay](https://liberapay.com/WarWolfen/donate "Liberapay")
+* [Liberapay](https://liberapay.com/WarWolfen "Liberapay")
