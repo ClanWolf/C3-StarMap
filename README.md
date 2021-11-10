@@ -1,4 +1,7 @@
 # C3-StarMap
+
+<img src="https://img.shields.io/liberapay/receives/WarWolfen.svg?logo=liberapay">
+
 Starmap of the BattleTech-Universe as a JavaScript webpage.
 
 # Copyright
