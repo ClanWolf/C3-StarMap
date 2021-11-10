@@ -1,6 +1,6 @@
 # C3-StarMap
 
-[Liberapay](https://liberapay.com/WarWolfen/donate "Liberapay")<img src="https://img.shields.io/liberapay/receives/WarWolfen.svg?logo=liberapay">
+[![Liberapay](https://img.shields.io/liberapay/receives/WarWolfen.svg?logo=liberapay)](https://liberapay.com/WarWolfen/donate)
 
 Starmap of the BattleTech-Universe as a JavaScript webpage.
 
